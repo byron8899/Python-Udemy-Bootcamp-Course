@@ -238,7 +238,7 @@ def player_stand(player_hand,dealer_hand):
             print('You win')
             print("*******")
             print('')
-            chip_amount += bet_flag*2
+            chip_amount += bet_flag
             startAgain()
         elif (player_hand.calc_val() == dealer_hand.calc_val()):
             print("****")
@@ -262,7 +262,7 @@ def player_stand(player_hand,dealer_hand):
         print("*************")
         print('Dealer Busts')
         print("*************")
-        chip_amount += bet_flag*2
+        chip_amount += bet_flag
         startAgain()
     
 #Player chooses whether he/she wants to play again or not
